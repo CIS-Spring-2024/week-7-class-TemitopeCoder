@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favorite Beach</title>
+        <style>
+        body{ 
+            background-image: url(images/Mybeach.jpg);
+            background-size: cover;
+
+
+            }
+            h1 {
+                background-color: rgb(27, 163, 68);
+                height: 50px;
+            }
+        header {
+                background-color: beige;
+                text-align: center;
+                font-size: large;
+        }
+        nav ul li{
+            display:grid;
+            color: rgb(140, 0, 255);
+        }
+        
+        .topnav {
+               text-align:justify;
+               font-size:x-large;
+               background-color: rgb(27, 163, 68);
+               height: 50px
+
+        }
+        .topnav a.active{
+             background-color: rgb(198, 198, 204);
+             height: 50px;
+        }
+        .topnav a:hover{
+             background-color: rgb(198, 198, 204);
+             height: 50px;
+        }
+        input {
+            border-color: darkblue;
+            width: 500px;
+            height: 50px;
+            font-weight: bold;
+        
+        }
+        #dob {
+            width: 150px;
+            
+        }
+        #submit{
+            width: 150px;
+            height: 50px;
+            font-size: large;
+            font-weight: bold;
+            background-color: blue;
+    
+        }
+        #female{
+            width: 20;
+            height: 20;
+        }
+        #male{
+            width: 20;
+            height: 20;
+        }
+        label{
+            font-weight: bolder;
+            font-size: large;
+        }
+        #E1{
+            width: 20;
+            height: 20;
+        }
+        #P1{
+            width: 20;
+            height: 20;
+        }
+        p{
+            font-weight: bolder;
+            font-size: large;  
+        }
+        button:hover{
+            background-color: rgb(27, 163, 68);
+        }
+        </style>
+
+    </head>
+    <body>
+    <header>
+        <h1>My Favorite Beach</h1>
+        <nav>
+        <ul>
+            <li><a href="#Beach" >Beach</a></li>
+            <li><a href="#Montain" > Mountain</a></li>
+        </ul>
+        </nav>
+        <div class="topnav">
+            <a href="Home.html"> Home </a>
+            <a href="Contact01.html" class="active"> Contact </a>
+            <a href="News.html">News </a>
+            <a href="About.html"> About </a>
+
+        </div>
+        </header>
+           <br><br>
+        <form>
+            <Label>Name </Label><br><b>
+            <input type="text" id="name" placeholder="Enter your first & last name"required><br><b><br>
+            
+            <Label>Phone Number</Label><br><b>
+            <input type="text" id="Phone" maxlength="14"  placeholder="+X (XXX)-XXX-XXXX" required><br><b><br>
+
+            <label>DOB</label><br><b>
+            <input type ="date" id="dob"required><br><b><br>
+
+            <label>Gender:</label><br><b>
+            <input type="checkbox" id="Female" > Female
+            <input type="checkbox" id="Male">Male<br><b><br>
+
+            <label>Email </label><br><b>
+            <input type="email" id="email"><br><b><br>
+
+            <label>Password</label><br><b>
+            <input type="password" id="Password" minlength="8"  maxlength="16" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,16}$" title="Password must be 8 to 16 characters long and contain at least one uppercase letter, one lowercase letter, and one digit"><br><b><br>
+                
+                <p>Preferred Contact Method:</p>
+                <div class="radio-group">
+                    <input type="radio" id="P1">Phone
+                    <input type="radio" id="E1">Email
+                </div>
+                <br><br>
+
+
+            <button type="submit" id="submit">Submit</button>
+        
+            
+        </form>
+    </body>
+    
+</html>
